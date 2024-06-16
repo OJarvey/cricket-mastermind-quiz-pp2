@@ -7,7 +7,7 @@ body {
 
 /* Buttons */
 button, .btn, #homeButton {
-    background-color: #ed0049; /* Blue */
+    background-color: #ed0049; 
     color: #ffffff;
     padding: 10px 20px;
     border: none;
@@ -55,3 +55,9 @@ h3 {
     margin-top: 1rem;
 }
 
+#wrapper {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
