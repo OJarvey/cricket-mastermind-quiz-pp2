@@ -53,6 +53,32 @@ button:hover,
     text-align: center;
   }
 
+  /* Remove bullet points and set text color for all unordered list items */
+ul li {
+    list-style-type: none;
+    color: #4180a7;
+  }
+  
+  /* Remove bullet points and padding for rules list */
+  .rules-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .rules-list li {
+    margin-bottom: 10px;
+  }
+
+  .rules-list li strong {
+    font-size: 1.1em;
+  }
+  
+  .rules-list p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    color: #333;
+}
+
 /* Remove underline from logo img */
 a {
     text-decoration: none;
