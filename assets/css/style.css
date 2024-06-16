@@ -38,6 +38,13 @@ a {
     -webkit-background-clip: text;
   }
 
+  /* Logo */
+  .logo {
+    height: 80px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
   /* Center the title */
 h1, h3 {
     margin-bottom: 20px;
