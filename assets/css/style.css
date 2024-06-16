@@ -1,52 +1,78 @@
 body {
-    background-size: cover; /* Ensure the background image covers the entire screen */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-attachment: fixed; /* Keep the background image fixed while scrolling */
-    background-position: center; /* Center the background image */
+    background-size: cover;
+    /* Ensure the background image covers the entire screen */
+    background-repeat: no-repeat;
+    /* Prevent the background image from repeating */
+    background-attachment: fixed;
+    /* Keep the background image fixed while scrolling */
+    background-position: center;
+    /* Center the background image */
 }
 
 /* Buttons */
-button, .btn, #homeButton {
-    background-color: #ed0049; 
+button,
+.btn,
+#homeButton {
+    background-color: #ed0049;
     color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    text-decoration: none; /* Remove underline from anchor tag */
-    display: block; /* Make buttons display as block elements */
+    text-decoration: none;
+    /* Remove underline from anchor tag */
+    display: block;
+    /* Make buttons display as block elements */
     cursor: pointer;
-    width: 200px; /* Fixed width for all buttons */
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
-    margin: 10px auto; /* Add margin to separate buttons */
-  }
-  
-  button:hover, .btn:hover, #homeButton:hover {
-    background-color: #003049; /* Dark blue on hover */
+    width: 200px;
+    /* Fixed width for all buttons */
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the width */
+    margin: 10px auto;
+    /* Add margin to separate buttons */
+}
+
+button:hover,
+.btn:hover,
+#homeButton:hover {
+    background-color: #003049;
+    /* Dark blue on hover */
+}
+
+/* Button List */
+.button-list {
+    list-style: none;
+    padding: 0;
+    margin: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  /* Remove underline from logo img */
+/* Remove underline from logo img */
 a {
-    text-decoration:none;
- }
+    text-decoration: none;
+}
 
- header h1 {
+/* Heading */
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 1rem;
+}
+
+/* Header */
+header h1 {
     font-size: 70px;
     font-weight: 600;
     background-image: linear-gradient(to left, #4180a7, #ed0049);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-  }
-
-  /* Logo */
-  .logo {
-    height: 80px;
-    padding-right: 5px;
-    vertical-align: middle;
 }
 
-  /* Center the title */
-h1, h3 {
+/* Center the title */
+h1,
+h3 {
     margin-bottom: 20px;
     text-align: center;
 }
@@ -55,11 +81,11 @@ h3 {
     font-size: 1.5em;
 }
 
- /* Heading */
- .heading {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 1rem;
+/* Logo */
+.logo {
+    height: 80px;
+    padding-right: 5px;
+    vertical-align: middle;
 }
 
 #wrapper {
