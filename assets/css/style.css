@@ -23,3 +23,8 @@ button, .btn, #homeButton {
   button:hover, .btn:hover, #homeButton:hover {
     background-color: #003049; /* Dark blue on hover */
   }
+
+  /* Remove underline from logo img */
+a {
+    text-decoration:none;
+ }
