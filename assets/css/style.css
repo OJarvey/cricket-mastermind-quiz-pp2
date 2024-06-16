@@ -1,16 +1,25 @@
 body {
-    background-image: url('assets/images/background-img.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-
-    background-size: cover;
-    /* Ensure the background image covers the entire screen */
-    background-repeat: no-repeat;
-    /* Prevent the background image from repeating */
-    background-attachment: fixed;
-    /* Keep the background image fixed while scrolling */
-    background-position: center;
-    /* Center the background image */
-
+    background-size: cover; /* Ensure the background image covers the entire screen */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Keep the background image fixed while scrolling */
+    background-position: center; /* Center the background image */
 }
+
+/* Buttons */
+button, .btn, #homeButton {
+    background-color: #ed0049; /* Blue */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline from anchor tag */
+    display: block; /* Make buttons display as block elements */
+    cursor: pointer;
+    width: 200px; /* Fixed width for all buttons */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    margin: 10px auto; /* Add margin to separate buttons */
+  }
+  
+  button:hover, .btn:hover, #homeButton:hover {
+    background-color: #003049; /* Dark blue on hover */
+  }
