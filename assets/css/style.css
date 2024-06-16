@@ -37,3 +37,13 @@ a {
     background-clip: text;
     -webkit-background-clip: text;
   }
+
+  /* Center the title */
+h1, h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+}
