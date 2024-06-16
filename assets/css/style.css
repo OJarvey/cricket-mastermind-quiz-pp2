@@ -48,6 +48,11 @@ button:hover,
     justify-content: center;
   }
 
+  .button-list li {
+    margin: 10px;
+    text-align: center;
+  }
+
 /* Remove underline from logo img */
 a {
     text-decoration: none;
