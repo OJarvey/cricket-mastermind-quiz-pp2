@@ -28,3 +28,12 @@ button, .btn, #homeButton {
 a {
     text-decoration:none;
  }
+
+ header h1 {
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #4180a7, #ed0049);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
