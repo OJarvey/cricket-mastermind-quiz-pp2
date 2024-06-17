@@ -54,6 +54,15 @@
         <button id="answer3" onclick="checkAnswer(2)"></button>
         <button id="answer4" onclick="checkAnswer(3)"></button>
 
+        <div>Score: <span id="score">0</span></div>
+        <div id="playAgain">
+          <p>Well Done! Would you like another go?</p>
+          <button onclick="endgameOption(0)">Yes</button>
+          <button id="homeButton" onclick="goHome()">Take Me Home</button>
+          <button onclick="endgameOption(1)">No, End Quiz</button>
+          
+        </div>
+
         <style>
             body {
               background-image: url('assets/images/background-img.jpg');
