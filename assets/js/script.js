@@ -129,6 +129,13 @@ function checkAnswer(answerNumber) {
   }
 }
 
+/**
+ * This function redirects the user to the home page.
+ */
+function goHome() {
+    window.location.href = 'index.html'; // Redirect to the home page
+  }
+  
 
 /**
  * this function starts the quiz
@@ -141,7 +148,7 @@ function startQuiz() {
     score.innerText = `0 out of ${quizLength} correct`;
   }
   startQuiz();
-  
+
 
   /**
  * This function ends the game, displays the play again options, and clears the timer.
