@@ -75,6 +75,9 @@ const questions = [
       }
 ]
 
+// Get the total number of questions.
+const quizLength = questions.length;
+
 
 /**
  * Loads the current question into the HTML element
@@ -138,3 +141,23 @@ function startQuiz() {
     score.innerText = `0 out of ${quizLength} correct`;
   }
   startQuiz();
+  
+
+  /**
+ * This function ends the game, displays the play again options, and clears the timer.
+ */
+function endgame() {
+    playAgain.style.visibility = "visible";
+    clearInterval(timer);
+    // Show the Take Me Home button
+    document.getElementById('homeButton').style.display = 'inline-block';
+  }
+  
+  // this function ends game
+  function endgameOption(chosen) {
+    if (chosen === 0) {
+      window.location.reload();
+    } else {
+      wrapper.innerHTML = "<h1>Thanks for playing...</h1>";
+    }
+  }
