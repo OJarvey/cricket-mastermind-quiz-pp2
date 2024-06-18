@@ -75,6 +75,13 @@ const questions = [
       }
 ]
 
+
+/**
+ * Loads the current question into the HTML element
+ * @param {int} questionNumber - The index of the question to load
+ */
+
+/* This function loads the current question */
 function loadQuestion(questionNumber) {
     question.innerText = questions[questionNumber].question;
   }
@@ -90,6 +97,35 @@ function loadAnswers(questionNumber) {
     answer4.innerText = questions[questionNumber].answers[3];
   }
   
+/**
+ * This function checks the answer button that has been pressed.
+ * If correct it increments the score and question number.
+ * It also checks if it is the end of the quiz
+ * @param {int} answerNumber - The index of the selected answer.
+ */
+function checkAnswer(answerNumber) {
+    console.log('answer number chosen: ', answerNumber);
+    // we check what the correct answer is for this question
+    let correctAnswer = questions[questionNumber].correct;
+    if (answerNumber === correctAnswer) {
+      // if correct we increment the score by 1
+      scoreAmount++;
+    }
+    // update the score display
+  score.innerText = `${scoreAmount} out of ${quizLength} correct`;
+  
+  // after we increment the questionNumber
+  questionNumber++;
+  // we check if it is the end of the quiz (have we run out of questions)
+  if (questionNumber === quizLength) {
+    endgame();
+  } else {
+    // if not we load the next question
+    loadQuestion(questionNumber);
+    loadAnswers(questionNumber);
+  }
+}
+
 
 /**
  * this function starts the quiz
