@@ -62,3 +62,19 @@ function startQuiz() {
   }
 
   startQuiz();
+
+  function endgame() {
+    playAgain.style.visibility = "visible";
+    clearInterval(timer);
+    // Show the Take Me Home button
+    document.getElementById('homeButton').style.display = 'inline-block';
+  }
+  
+  // This function ends game
+  function endgameOption(chosen) {
+    if (chosen === 0) {
+      window.location.reload();
+    } else {
+      wrapper.innerHTML = "<h1>Thanks for playing...</h1>";
+    }
+  }
