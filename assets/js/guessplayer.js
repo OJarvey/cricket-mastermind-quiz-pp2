@@ -24,3 +24,16 @@ const questions = [
       "correct": 2
     },
 ]
+
+/**
+ * This function starts the quiz
+ */
+function startQuiz() {
+    playAgain.style.visibility = "hidden";
+    document.getElementById('homeButton').style.display = 'none'; // Hide the Take Me Home button initially
+    loadQuestion(questionNumber);
+    loadAnswers(questionNumber);
+    score.innerText = `0 out of ${quizLength} correct`;
+  }
+  
+  startQuiz();
