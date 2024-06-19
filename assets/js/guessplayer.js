@@ -25,6 +25,20 @@ const questions = [
     },
 ]
 
+const quizLength = questions.length;
+
+/**
+ * Loads a question and its corresponding image based on the question number.
+ * @param {number} questionNumber - The index of the question to load.
+ */
+function loadQuestion(questionNumber) {
+  const questionData = questions[questionNumber]; // Get the question data for the current question
+  questionImage.src = questionData.image; // Set the source of the question image to the image URL from the question data
+  questionImage.alt = `Image for ${questionData.question}`; // Set the alt text for the image for accessibility, using the question text
+  question.innerText = questionData.question;
+  startTimer(); 
+}
+
 /**
  * This function starts the timer for each question
  */
