@@ -16,9 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-     
+
     <title>Cricket Mastermind</title>
-    
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180"
       href="assets/images/favicon/icons8-cricket-180.png">
@@ -33,16 +33,16 @@
       <div id="wrapper">
         <header>
           <h1 class="heading">
-              <a href="index.html">
-                  <img class="logo"
-                      src="assets/images/icons8-cricket.png"
-                      alt="logo">
-              </a>
+            <a href="index.html">
+              <img class="logo"
+                src="assets/images/icons8-cricket.png"
+                alt="logo">
+            </a>
 
-              Cricket Mastermind
+            Cricket Mastermind
 
           </h1>
-      </header>
+        </header>
 
         <h3>
           FACTS
@@ -54,6 +54,8 @@
         <button id="answer3" onclick="checkAnswer(2)"></button>
         <button id="answer4" onclick="checkAnswer(3)"></button>
 
+        <hr>
+
         <div id="timer">Time left: <span id="time">15</span> seconds</div>
         <div>Score: <span id="score">0</span></div>
         <div id="playAgain">
@@ -61,7 +63,6 @@
           <button onclick="endgameOption(0)">Yes</button>
           <button id="homeButton" onclick="goHome()">Take Me Home</button>
           <button onclick="endgameOption(1)">No, End Quiz</button>
-          
         </div>
 
         <style>
@@ -72,7 +73,9 @@
               background-size: 100% 100%;
             }
             </style>
+      </div>
+    </div>
 
-        <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
