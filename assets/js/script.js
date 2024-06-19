@@ -135,6 +135,14 @@ function startTimer() {
   clearInterval(timer); // Clear any existing timer
   timeLeft = 15; // 15 seconds for each question
   timeDisplay.innerText = timeLeft;
+  timer = setInterval(function () {
+    timeLeft--;
+    timeDisplay.innerText = timeLeft;
+    if (timeLeft <= 0) {
+      clearInterval(timer);
+    
+    }
+  }, )
 }
 
 /**
