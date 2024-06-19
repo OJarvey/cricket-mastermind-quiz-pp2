@@ -10,3 +10,8 @@ const playAgain = document.getElementById('playAgain');
 const wrapper = document.getElementById('wrapper');
 const timeDisplay = document.getElementById('time');
 const result = document.getElementById('result');
+
+let questionNumber = 0;
+let scoreAmount = 0;
+let timer;
+let timeLeft;
