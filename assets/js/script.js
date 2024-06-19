@@ -142,7 +142,7 @@ function startTimer() {
       clearInterval(timer);
     
     }
-  }, )
+  }, 1000)
 }
 
 /**
