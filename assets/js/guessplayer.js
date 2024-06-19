@@ -40,6 +40,18 @@ function loadQuestion(questionNumber) {
 }
 
 /**
+ * This function loads answers into the choice buttons
+ * @param {int} questionNumber 
+ */
+function loadAnswers(questionNumber) {
+    const questionData = questions[questionNumber];
+    answer1.innerText = questionData.answers[0];
+    answer2.innerText = questionData.answers[1];
+    answer3.innerText = questionData.answers[2];
+    answer4.innerText = questionData.answers[3];
+  }
+  
+/**
  * This function starts the timer for each question
  */
 function startTimer() {
