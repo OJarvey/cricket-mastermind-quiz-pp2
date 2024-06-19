@@ -140,7 +140,14 @@ function startTimer() {
     timeDisplay.innerText = timeLeft;
     if (timeLeft <= 0) {
       clearInterval(timer);
-    
+      // Automatically move to the next question or end the game
+      questionNumber++;
+      if (questionNumber === quizLength) {
+        endgame();
+      } else {
+        loadQuestion(questionNumber);
+        loadAnswers(questionNumber);
+      }
     }
   }, 1000)
 }
