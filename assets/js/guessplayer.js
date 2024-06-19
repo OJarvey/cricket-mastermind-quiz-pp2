@@ -15,3 +15,12 @@ let questionNumber = 0;
 let scoreAmount = 0;
 let timer;
 let timeLeft;
+
+const questions = [
+    {
+      "image": "assets/images/players/chris-gayle.jpg",
+      "question": "Who is this player?",
+      "answers": ["Brain Lara", "Rodger Federer", "Chris Gayle", "Virat Kohli"],
+      "correct": 2
+    },
+]
