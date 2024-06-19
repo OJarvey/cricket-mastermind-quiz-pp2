@@ -7,6 +7,7 @@ const answer4 = document.getElementById('answer4');
 const score = document.getElementById('score');
 const playAgain = document.getElementById('playAgain');
 const wrapper = document.getElementById('wrapper');
+const timeDisplay = document.getElementById('time');
 const result = document.getElementById('result');
 
 // Initialize variables to track the question number, score, timer, and time left.
