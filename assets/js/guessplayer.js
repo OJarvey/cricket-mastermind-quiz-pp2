@@ -26,6 +26,31 @@ const questions = [
 ]
 
 /**
+ * This function starts the timer for each question
+ */
+function startTimer() {
+    clearInterval(timer); // Clear any existing timer
+    timeLeft = 15; // 15 seconds for each question
+    timeDisplay.innerText = timeLeft;
+  
+    timer = setInterval(function () {
+      timeLeft--;
+      timeDisplay.innerText = timeLeft;
+      if (timeLeft <= 0) {
+        clearInterval(timer);
+        // Automatically move to the next question or end the game
+        questionNumber++;
+        if (questionNumber === quizLength) {
+          endgame();
+        } else {
+          loadQuestion(questionNumber);
+          loadAnswers(questionNumber);
+        }
+      }
+    }, 1000);
+  }
+
+/**
  * This function starts the quiz
  */
 function startQuiz() {
@@ -35,5 +60,5 @@ function startQuiz() {
     loadAnswers(questionNumber);
     score.innerText = `0 out of ${quizLength} correct`;
   }
-  
+
   startQuiz();
