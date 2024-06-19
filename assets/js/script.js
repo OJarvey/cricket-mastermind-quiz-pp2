@@ -88,6 +88,7 @@ const quizLength = questions.length;
 /* This function loads the current question */
 function loadQuestion(questionNumber) {
     question.innerText = questions[questionNumber].question;
+    startTimer();
   }
 
   /**
@@ -128,6 +129,12 @@ function checkAnswer(answerNumber) {
     loadQuestion(questionNumber);
     loadAnswers(questionNumber);
   }
+}
+
+function startTimer() {
+  clearInterval(timer); // Clear any existing timer
+  timeLeft = 15; // 15 seconds for each question
+  timeDisplay.innerText = timeLeft;
 }
 
 /**
