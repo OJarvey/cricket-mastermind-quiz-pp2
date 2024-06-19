@@ -47,6 +47,23 @@
                     GUESS THE PLAYER
                 </h3>
 
+                <button id="answer1" onclick="checkAnswer(0)"></button>
+                    <button id="answer2" onclick="checkAnswer(1)"></button>
+                    <button id="answer3" onclick="checkAnswer(2)"></button>
+                    <button id="answer4" onclick="checkAnswer(3)"></button>
+
+                    <hr>
+
+                <div id="timer">Time left: <span id="time">15</span>seconds</div>
+                <div>Score: <span id="score">0</span></div>
+                <div id="playAgain">
+                    <p>Well Done! Would you like another go?</p>
+                    <button onclick="endgameOption(0)">Yes</button>
+                    <button onclick="endgameOption(1)">No, get me outta here!</button>
+                    <button id="homeButton" onclick="goHome()">Take Me
+                        Home</button>
+                </div>
+
                 <style>
                     body {
                       background-image: url('assets/images/background-img.jpg');
