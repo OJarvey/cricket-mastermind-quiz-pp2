@@ -1,3 +1,4 @@
+/* Home page background image */
 body {
     background-size: cover; /* Ensure the background image covers the entire screen */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
@@ -103,8 +104,7 @@ header h1 {
 }
 
 /* Center the title */
-h1,
-h3 {
+h1, h3 {
     margin-bottom: 20px;
     text-align: center;
 }
@@ -125,6 +125,7 @@ h3 {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: padding 0.3s; /* Add transition to wrapper padding */
 }
 
 .container {
@@ -132,4 +133,13 @@ h3 {
     margin-top: 20px;
     margin: 0 auto;
     padding: 20px;
+    transition: margin 0.3s; /* Add transition to container margin */
+}
+
+#question-container {
+    margin: 20px 0;
+}
+
+#playAgain {
+    visibility: hidden;
 }
