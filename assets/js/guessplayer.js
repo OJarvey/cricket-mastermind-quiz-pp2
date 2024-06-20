@@ -190,6 +190,11 @@ function startQuiz() {
     // Show the Take Me Home button
     document.getElementById('homeButton').style.display = 'inline-block';
   }
+
+  function goHome() {
+    window.location.href = 'index.html'; // Redirect to the home page
+  }
+  
   
   // This function ends game
   function endgameOption(chosen) {

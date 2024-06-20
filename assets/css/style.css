@@ -1,12 +1,8 @@
 body {
-    background-size: cover;
-    /* Ensure the background image covers the entire screen */
-    background-repeat: no-repeat;
-    /* Prevent the background image from repeating */
-    background-attachment: fixed;
-    /* Keep the background image fixed while scrolling */
-    background-position: center;
-    /* Center the background image */
+    background-size: cover; /* Ensure the background image covers the entire screen */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Keep the background image fixed while scrolling */
+    background-position: center; /* Center the background image */
 }
 
 /* Buttons */
@@ -18,17 +14,12 @@ button,
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    text-decoration: none;
-    /* Remove underline from anchor tag */
-    display: block;
-    /* Make buttons display as block elements */
+    text-decoration: none; /* Remove underline from anchor tag */
+    display: block; /* Make buttons display as block elements */
     cursor: pointer;
-    width: 200px;
-    /* Fixed width for all buttons */
-    box-sizing: border-box;
-    /* Ensure padding and border are included in the width */
-    margin: 10px auto;
-    /* Add margin to separate buttons */
+    width: 200px; /* Fixed width for all buttons */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    margin: 10px auto; /* Add margin to separate buttons */
 }
 
 button:hover,
@@ -84,6 +75,15 @@ a {
     text-decoration: none;
 }
 
+.player-img {
+    max-width: 45%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+    transition: max-width 0.3s; /* Add transition to image max-width */
+}
+
 /* Heading */
 .heading {
     text-align: center;
@@ -99,6 +99,7 @@ header h1 {
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+    transition: font-size 0.3s; /* Add transition to header font size */
 }
 
 /* Center the title */
