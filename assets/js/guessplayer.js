@@ -23,6 +23,72 @@ const questions = [
       "answers": ["Brain Lara", "Rodger Federer", "Chris Gayle", "Virat Kohli"],
       "correct": 2
     },
+    {
+        "image": "assets/images/players/andrew-flintoff.webp",
+        "question": "Who is this player?",
+        "answers": ["Andrew Flintoff", "Rodger Federer", "Chris Gayle", "Virat Kohli"],
+        "correct": 0
+      },
+      {
+        "image": "assets/images/players/jofra-archer.jpg",
+        "question": "Who is this player?",
+        "answers": ["Bret Lee", "Ben Stokes", "Chris Gayle", "Jofra Archer"],
+        "correct": 3
+      },
+      {
+        "image": "assets/images/players/ben-stokes.webp",
+        "question": "Who is this player?",
+        "answers": ["Bret Lee", "Ben Stokes", "Chris Gayle", "Virat Kohli"],
+        "correct": 1
+      },
+      {
+        "image": "assets/images/players/mitchell-starc.webp",
+        "question": "Who is this player?",
+        "answers": ["Bret Lee", "Ben Stokes", "Mitchell Starc", "Virat Kohli"],
+        "correct": 2
+      },
+      {
+        "image": "assets/images/players/kieron-pollard.jpg",
+        "question": "Who is this player?",
+        "answers": ["Chris Gayle", "Ben Stokes", "Mitchell Starc", "Kieron Pollard"],
+        "correct": 3
+      },
+      {
+        "image": "assets/images/players/sachin-tendulkar.webp",
+        "question": "Who is this player?",
+        "answers": ["Chris Gayle", "Rohit Sharma", "Sachin Tendulkar", "Andrew Flintoff"],
+        "correct": 2
+      },
+      {
+        "image": "assets/images/players/steve-smith.jpg",
+        "question": "Who is this player?",
+        "answers": ["Mitchell Starc", "Sachin Tendulkar", "Steve Smith", "Ben Stokes"],
+        "correct": 2
+      },
+      {
+        "image": "assets/images/players/virat-kohli.webp",
+        "question": "Who is this player?",
+        "answers": ["Virat Kohli", "Rohit Sharma", "Sachin Tendulkar", "Chris Gayle"],
+        "correct": 0
+      },
+      {
+        "image": "assets/images/players/bret-lee.webp",
+        "question": "Who is this player?",
+        "answers": ["Ben Stokes", "Mitchell Starc", "Andrew Flintoff", "Bret Lee"],
+        "correct": 3
+      },
+      {
+        "image": "assets/images/players/brain-lara.jpg",
+        "question": "Who is this player?",
+        "answers": ["Chris Gayle", "Jofra Archer", "Brain Lara", "Kieron Pollard"],
+        "correct": 2
+      },
+      {
+        "image": "assets/images/players/rohit-sharma.jpg",
+        "question": "Who is this player?",
+        "answers": ["Sachin Tendulkar", "Virat Kohli", "Brain Lara", "Rohit Sharma"],
+        "correct": 3
+      }
 ]
 
 const quizLength = questions.length;
