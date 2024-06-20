@@ -16,7 +16,7 @@ button,
     border: none;
     border-radius: 5px;
     text-decoration: none; /* Remove underline from anchor tag */
-    display: block; /* Make buttons display as block elements */
+    display: inline-block; /* Make buttons display as block elements */
     cursor: pointer;
     width: 200px; /* Fixed width for all buttons */
     box-sizing: border-box; /* Ensure padding and border are included in the width */
