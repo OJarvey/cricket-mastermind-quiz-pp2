@@ -173,4 +173,26 @@ h3 {
     }
   }
 
-  
+  /* For screens with a maximum width of 768px (e.g., tablets) */
+@media only screen and (max-width: 768px) {
+    /* Adjust button width and margin */
+    .btn, button {
+      width: 200px; /* Reduce button width */
+      margin: 5px 10px; /* Adjust button margin */
+    }
+    
+    /* Adjust header font size */
+    header h1 {
+      font-size: 50px; /* Reduce header font size */
+    }
+    
+    /* Adjust wrapper padding */
+    #wrapper {
+      padding: 15px; /* Reduce wrapper padding */
+    }
+    
+    /* Adjust container margin */
+    .container {
+      margin-top: 15px; /* Reduce container margin */
+    }
+  }
