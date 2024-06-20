@@ -143,3 +143,34 @@ h3 {
 #playAgain {
     visibility: hidden;
 }
+
+/* For screens with a maximum width of 480px (e.g., smartphones) */
+@media only screen and (max-width: 480px) {
+    /* Adjust button width and margin */
+    .btn, button {
+      width: 200px; /* Reduce button width further */
+      margin: 5px 5px; /* Adjust button margin further */
+    }
+    
+    /* Adjust header font size */
+    header h1 {
+      font-size: 30px; /* Reduce header font size further */
+    }
+    
+    /* Adjust wrapper padding */
+    #wrapper {
+      padding: 10px; /* Reduce wrapper padding further */
+    }
+    
+    /* Adjust container margin */
+    .container {
+      margin-top: 10px; /* Reduce container margin further */
+    }
+    
+    /* Adjust image width */
+    .player-img {
+      max-width: 30%; /* Reduce image width */
+    }
+  }
+
+  
