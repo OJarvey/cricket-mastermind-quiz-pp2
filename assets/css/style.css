@@ -34,7 +34,7 @@ button:hover,
 .button-list {
     list-style: none;
     padding: 0;
-    margin: 110px;
+    margin: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -131,9 +131,10 @@ h3 {
 .container {
     text-align: center;
     margin-top: 20px;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 20px;
     transition: margin 0.3s; /* Add transition to container margin */
+    max-width: 1080px;
 }
 
 #question-container {
@@ -159,7 +160,7 @@ h3 {
     
     /* Adjust wrapper padding */
     #wrapper {
-      padding: 10px; /* Reduce wrapper padding further */
+      padding: 15px; /* Reduce wrapper padding further */
     }
     
     /* Adjust container margin */
@@ -183,16 +184,16 @@ h3 {
     
     /* Adjust header font size */
     header h1 {
-      font-size: 50px; /* Reduce header font size */
+      font-size: 38px; /* Reduce header font size */
     }
     
     /* Adjust wrapper padding */
     #wrapper {
-      padding: 15px; /* Reduce wrapper padding */
+      padding: 30px; /* Reduce wrapper padding */
     }
     
     /* Adjust container margin */
     .container {
-      margin-top: 15px; /* Reduce container margin */
+      margin-top: 50px; /* Reduce container margin */
     }
   }
