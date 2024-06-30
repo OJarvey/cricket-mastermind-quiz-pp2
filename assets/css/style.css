@@ -1,9 +1,11 @@
 /* Home page background image */
 body {
-    background-size: cover; /* Ensure the background image covers the entire screen */
+    background-size: cover; /* Center the background image */
+    background-image: url('../images/background-img.jpg');
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-attachment: fixed; /* Keep the background image fixed while scrolling */
     background-position: center; /* Center the background image */
+    background-size: 100% 100%;
 }
 
 /* Buttons */
@@ -26,22 +28,21 @@ button,
 button:hover,
 .btn:hover,
 #homeButton:hover {
-    background-color: #003049;
-    /* Dark blue on hover */
+    background-color: #003049; /* Dark blue on hover */
 }
 
 /* Button List */
 .button-list {
     list-style: none;
     padding: 0;
-    margin: 100px;
+    margin: 110px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .button-list li {
-    margin: 10px;
+    margin: 0px;
     text-align: center;
   }
 
@@ -85,6 +86,13 @@ a {
     transition: max-width 0.3s; /* Add transition to image max-width */
 }
 
+.not-found-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
 /* Heading */
 .heading {
     text-align: center;
@@ -126,15 +134,18 @@ h3 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: padding 0.3s; /* Add transition to wrapper padding */
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .container {
     text-align: center;
-    margin-top: 20px;
-    margin: 50px auto;
+    margin-top: 5px;
+    margin: 100px auto;
+    margin-bottom: 5px;
     padding: 20px;
     transition: margin 0.3s; /* Add transition to container margin */
-    max-width: 1080px;
 }
 
 #question-container {
@@ -146,54 +157,65 @@ h3 {
 }
 
 /* For screens with a maximum width of 480px (e.g., smartphones) */
-@media only screen and (max-width: 480px) {
-    /* Adjust button width and margin */
-    .btn, button {
-      width: 200px; /* Reduce button width further */
-      margin: 0; /* Adjust button margin further */
-    }
-    
-    /* Adjust header font size */
-    header h1 {
-      font-size: 2rem; /* Reduce header font size further */
-    }
-    
-    /* Adjust wrapper padding */
-    #wrapper {
-      padding: 15px; /* Reduce wrapper padding further */
-    }
-    
-    /* Adjust container margin */
-    .container {
-      margin-top: 10px; /* Reduce container margin further */
-    }
-    
-    /* Adjust image width */
-    .player-img {
-      max-width: 100%; /* Reduce image width */
-    }
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
   }
 
-  /* For screens with a maximum width of 768px (e.g., tablets) */
-@media only screen and (max-width: 768px) {
-    /* Adjust button width and margin */
-    .btn, button {
-      width: 200px; /* Reduce button width */
-      margin: 5px 10px; /* Adjust button margin */
-    }
-    
-    /* Adjust header font size */
-    header h1 {
-      font-size: 38px; /* Reduce header font size */
-    }
-    
-    /* Adjust wrapper padding */
-    #wrapper {
-      padding: 30px; /* Reduce wrapper padding */
-    }
-    
-    /* Adjust container margin */
-    .container {
-      margin-top: 50px; /* Reduce container margin */
-    }
+  .button-list {
+    margin: 20%;
   }
+
+  #text {
+    margin-top: 30%;
+  }
+
+  /* Adjust button width and margin */
+  .btn, button {
+    margin: 15px 10px; /* Adjust button margin further */
+  }
+
+  .player-img {
+    max-width: 100%;
+  }
+
+  /* Adjust container margin */
+  .container {
+    margin-top: 20px; /* Reduce container margin further */
+    display: flex;
+    padding: 0;
+  }
+}
+
+/* For screens with a maximum width of 768px (e.g., tablets) */
+@media screen and (max-width: 769px) {
+  .button-list li {
+    margin: 0px;
+  }
+  .btn, button {
+    width: 200px; /* Reduce button width */
+    margin: 5px 10px; /* Adjust button margin */
+  }
+
+  #wrapper {
+    padding: 30px; /* Reduce wrapper padding */
+  }
+
+  .container {
+    margin-top: 50px; /* Reduce container margin */
+  }
+}
+
+/* For screens larger than 768px */
+@media screen and (min-width: 769px) {
+  .button-list {
+    flex-direction: row; /* Switch to row layout for larger screens */
+    flex-wrap: nowrap;
+  }
+  .button-list li {
+    margin: 10px;
+  }
+  .btn, button, #homeButton {
+    width: 200px; /* Ensure buttons take up equal space */
+  }
+}
