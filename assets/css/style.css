@@ -31,6 +31,21 @@ button:hover,
   background-color: #003049; /* Dark blue on hover */
 }
 
+button:focus,
+.btn:focus,
+#homeButton:focus {
+    background-color: #ed0049;
+    outline: none; /* Remove the default focus outline */
+}
+
+/* Remove blue color after click on smaller devices */
+button:active,
+.btn:active,
+#homeButton:active {
+  background-color: #003049; 
+  outline: none; /* Remove the default focus outline */
+}
+
 /* Button List */
 .button-list {
   list-style: none;
