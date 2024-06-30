@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Get references to HTML elements
+  /**
+
+  * Get references to HTML elements
+
+  */
   const elements = {
     question: document.getElementById('question'),
     answerButtons: [
@@ -14,73 +18,97 @@ document.addEventListener("DOMContentLoaded", () => {
     timeDisplay: document.getElementById('time')
   };
 
-  // Quiz state variables
+  /**
+
+ * Check if all elements are found
+
+ */
+
+  if (!elements.question || !elements.score || !elements.playAgain || !elements.wrapper || !elements.timeDisplay) {
+    console.error('Some elements are missing.');
+    return;
+  }
+  for (const button of elements.answerButtons) {
+    if (!button) {
+      console.error('Some answer buttons are missing.');
+      return;
+
+    }
+  }
+
+    /**
+
+   * Quiz state variables
+
+   */
   let questionNumber = 0;
   let scoreAmount = 0;
   let timer;
   let timeLeft;
 
-  // Questions array
+  /**
+
+   * Questions array
+
+   */
   const questions = [
+
     {
       question: "Who won the ICC Cricket World Cup in 2019?",
       answers: ["England", "Australia", "India", "New Zealand"],
       correct: 0
     },
+
     {
-      "question": "Who is the leading run-scorer in Test cricket?",
-      "answers": [
-        "Ricky Ponting", "Brian Lara", "Sachin Tendulkar", "Jacques Kallis"
-      ],
-      "correct": 2
+      question: "Who is the leading run-scorer in Test cricket?",
+      answers: ["Ricky Ponting", "Brian Lara", "Sachin Tendulkar", "Jacques Kallis"],
+      correct: 2
     },
+
     {
-      "question": "Which country is the first to win two ICC T20 World Cups?",
-      "answers": [
-        "India", "West Indies", "Australia", "Pakistan"
-      ],
-      "correct": 1
+      question: "Which country is the first to win two ICC T20 World Cups?",
+      answers: ["India", "West Indies", "Australia", "Pakistan"],
+      correct: 1
     },
+
     {
-      "question": "Where is the world cup T20 2024 taking place?",
-      "answers": [
-        "India", "Canada & USA", "England", "West Indies & USA"
-      ],
-      "correct": 3
+      question: "Where is the world cup T20 2024 taking place?",
+      answers: ["India", "Canada & USA", "England", "West Indies & USA"],
+      correct: 3
     },
+
     {
-      "question": "Who struck 4 successive sixes in a T20 world cup final that made Ben Stokes cry?",
-      "answers": [
-        "Carlos Brathwaite", "Steve Smith", "Chris Gayle", "Rohit Sharma"
-      ],
-      "correct": 0
+      question: "Who struck 4 successive sixes in a T20 world cup final that made Ben Stokes cry?",
+      answers: ["Carlos Brathwaite", "Steve Smith", "Chris Gayle", "Rohit Sharma"],
+      correct: 0
     },
+
     {
-      "question": "The Ashes is a Test cricket series between which two countries?",
-      "answers": [
-        "India & Pakistan", "West Indies & England", "New Zealand & Australia", "England & Australia"
-      ],
-      "correct": 3
+      question: "The Ashes is a Test cricket series between which two countries?",
+      answers: ["India & Pakistan", "West Indies & England", "New Zealand & Australia", "England & Australia"],
+      correct: 3
     },
+
     {
-      "question": "How many bails sit on top of the cricket stumps?",
-      "answers": [
-        "Four", "Three", "Two", "Six"
-      ],
-      "correct": 2
+      question: "How many bails sit on top of the cricket stumps?",
+      answers: ["Four", "Three", "Two", "Six"],
+      correct: 2
     },
+
     {
-      "question": "How many balls are in an over?",
-      "answers": [
-        "Four", "Seven", "Five", "Six"
-      ],
-      "correct": 3
+      question: "How many balls are in an over?",
+      answers: ["Four", "Seven", "Five", "Six"],
+      correct: 3
     }
   ];
 
   const quizLength = questions.length;
 
-  // Load a question
+   /**
+
+   * Load a question
+
+   */
   function loadQuestion() {
     const questionData = questions[questionNumber];
     elements.question.innerText = questionData.question;
@@ -90,7 +118,11 @@ document.addEventListener("DOMContentLoaded", () => {
     startTimer();
   }
 
-  // Check the answer
+  /**
+
+   * Check the answer
+
+   */
   function checkAnswer(answerNumber) {
     if (answerNumber === questions[questionNumber].correct) {
       scoreAmount++;
