@@ -151,7 +151,11 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = '404.html';
   });
 
-  // Start the timer
+    /**
+
+   * Start the timer
+
+   */
   function startTimer() {
     clearInterval(timer);
     timeLeft = 15;
@@ -171,19 +175,31 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000);
   }
 
-  // End the game
+  /**
+
+   * End the game
+
+   */
   function endgame() {
     elements.playAgain.style.visibility = "visible";
     clearInterval(timer);
     document.getElementById('homeButton').style.display = 'inline-block';
   }
 
-  // Redirect to the home page
+    /**
+
+   * Redirect to the home page
+
+   */
   function goHome() {
     window.location.href = 'index.html';
   }
 
-  // Handle play again or end game options
+    /**
+
+   * Handle play again or end game options
+
+   */
   function endgameOption(chosen) {
     if (chosen === 0) {
       window.location.reload();
@@ -192,16 +208,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Add event listeners for answer buttons
+    /**
+
+   * Add event listeners for answer buttons
+
+   */
   elements.answerButtons.forEach((button, index) => {
     button.addEventListener('click', () => checkAnswer(index));
   });
 
-  // Expose functions to the global scope for HTML event handlers
+   /**
+    
+   * Expose functions to the global scope for HTML event handlers
+   
+   */
   window.goHome = goHome;
   window.endgameOption = endgameOption;
 
-  // Start the quiz
+    /**
+
+   * Start the quiz
+
+   */
   function startQuiz() {
     elements.playAgain.style.visibility = "hidden";
     document.getElementById('homeButton').style.display = 'none';
