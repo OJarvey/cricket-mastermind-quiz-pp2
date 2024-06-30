@@ -99,6 +99,30 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "How many balls are in an over?",
       answers: ["Four", "Seven", "Five", "Six"],
       correct: 3
+    },
+
+    {
+      question: "Which country won the ICC T20 World Cup 2024?",
+      answers: ["India", "Australia", "South Africa", "Afghanistan"],
+      correct: 0
+    },
+
+    {
+      question: "Who is the only batsman in international cricket to score 400 runs in a single innings of a test match??",
+      answers: ["Sir Vivian Richards", "Steve Smith", " Sachin Tendulkar", "Brian Lara"],
+      correct: 3
+    },
+
+    {
+      question: "Name the player who holds the record of scoring 100 hundreds in international cricket.",
+      answers: ["Joe Root", " Sachin Tendulkar", "Brain Lara", "Ricky Ponting"],
+      correct: 3
+    },
+
+    {
+      question: "Who was the first player to hit 6 sixes in a over?",
+      answers: ["Kieron Pollard", "Virat Vohli", "Sir Garfield Sobers", "Ricky Ponting"],
+      correct: 2
     }
   ];
 
