@@ -150,12 +150,12 @@ h3 {
     /* Adjust button width and margin */
     .btn, button {
       width: 200px; /* Reduce button width further */
-      margin: 5px 5px; /* Adjust button margin further */
+      margin: 0; /* Adjust button margin further */
     }
     
     /* Adjust header font size */
     header h1 {
-      font-size: 30px; /* Reduce header font size further */
+      font-size: 2rem; /* Reduce header font size further */
     }
     
     /* Adjust wrapper padding */
@@ -170,7 +170,7 @@ h3 {
     
     /* Adjust image width */
     .player-img {
-      max-width: 30%; /* Reduce image width */
+      max-width: 100%; /* Reduce image width */
     }
   }
 
