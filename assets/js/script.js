@@ -136,6 +136,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+   /**
+
+   * Error page redirection
+
+   */
+   window.addEventListener('error', function(event) {
+    console.error("Error occurred: ", event.message);
+    window.location.href = '404.html';
+  });
+
+  window.addEventListener('unhandledrejection', function(event) {
+    console.error("Unhandled promise rejection: ", event.reason);
+    window.location.href = '404.html';
+  });
+
   // Start the timer
   function startTimer() {
     clearInterval(timer);
