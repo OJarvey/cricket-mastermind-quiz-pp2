@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Get references to HTML elements
+    /**
+
+   * Get references to HTML elements
+
+   */
   const elements = {
     question: document.getElementById('question'),
     questionImage: document.getElementById('question-image'),
@@ -15,13 +19,22 @@ document.addEventListener("DOMContentLoaded", () => {
     timeDisplay: document.getElementById('time')
   };
 
-  // Quiz state variables
+    /**
+
+   * Quiz state variables
+
+   */
   let questionNumber = 0;
   let scoreAmount = 0;
   let timer;
   let timeLeft;
 
-  // Questions array
+  
+  /**
+
+   * Questions array
+
+   */
   const questions = [
     {
       image: "assets/images/players/chris-gayle.jpg",
@@ -99,7 +112,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const quizLength = questions.length;
 
-  // Load a question
+    /**
+
+   * Load a question
+
+   */
   function loadQuestion() {
     const questionData = questions[questionNumber];
     elements.questionImage.src = questionData.image;
@@ -111,7 +128,11 @@ document.addEventListener("DOMContentLoaded", () => {
     startTimer();
   }
 
-  // Check the answer
+    /**
+
+   * Check the answer
+
+   */
   function checkAnswer(answerNumber) {
     if (answerNumber === questions[questionNumber].correct) {
       scoreAmount++;
@@ -125,7 +146,29 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Start the timer
+   /**
+
+   * Error page redirection
+
+   */
+   window.addEventListener('error', function(event) {
+    console.error("Error occurred: ", event.message);
+    if (!event.message.includes('Script error')) {
+     window.location.href = '404.html';
+    }
+
+  });
+
+  window.addEventListener('unhandledrejection', function(event) {
+    console.error("Unhandled promise rejection: ", event.reason);
+    window.location.href = '404.html';
+  });
+
+  /**
+
+   * Start the timer
+
+   */
   function startTimer() {
     clearInterval(timer);
     timeLeft = 15;
@@ -145,19 +188,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000);
   }
 
-  // End the game
+    /**
+
+   * End the game
+
+   */
   function endgame() {
     elements.playAgain.style.visibility = "visible";
     clearInterval(timer);
     document.getElementById('homeButton').style.display = 'inline-block';
   }
 
-  // Redirect to the home page
+    /**
+
+   * Redirect to the home page
+
+   */
   function goHome() {
     window.location.href = 'index.html';
   }
 
-  // Handle play again or end game options
+  
+  /**
+
+   * Handle play again or end game options
+
+   */
   function endgameOption(chosen) {
     if (chosen === 0) {
       window.location.reload();
@@ -166,21 +222,33 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Add event listeners for answer buttons
+    /**
+
+   * Add event listeners for answer buttons
+
+   */
   elements.answerButtons.forEach((button, index) => {
     button.addEventListener('click', () => checkAnswer(index));
   });
 
-  // Expose functions to the global scope for HTML event handlers
+    /**
+
+   * Expose functions to the global scope for HTML event handlers
+
+   */
   window.goHome = goHome;
   window.endgameOption = endgameOption;
 
-  // Start the quiz
+    /**
+
+   * Start the quiz
+
+   */
   function startQuiz() {
     elements.playAgain.style.visibility = "hidden";
     document.getElementById('homeButton').style.display = 'none';
     elements.score.innerText = `0 out of ${quizLength} correct`;
-    loadQuestion(questionNumber);
+    loadQuestion();
   }
 
   startQuiz();
