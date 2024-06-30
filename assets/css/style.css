@@ -149,12 +149,16 @@ h3 {
 }
 
 #question-container {
-    margin: 20px 0;
+  width: auto;
+  margin: 10px;
 }
 
 #playAgain {
     visibility: hidden;
 }
+
+/* MEADIA QUERY*/
+
 
 /* For screens with a maximum width of 480px (e.g., smartphones) */
 @media screen and (max-width: 480px) {
@@ -189,9 +193,14 @@ h3 {
 
 /* For screens with a maximum width of 768px (e.g., tablets) */
 @media screen and (max-width: 769px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
   .button-list li {
     margin: 0px;
   }
+
   .btn, button {
     width: 200px; /* Reduce button width */
     margin: 5px 10px; /* Adjust button margin */
@@ -204,10 +213,23 @@ h3 {
   .container {
     margin-top: 50px; /* Reduce container margin */
   }
+
+  .player-img {
+    max-width: 100%;
+  }
+
+  #question-container button {
+    flex-direction: column;
+    width: 300px;
+    margin: 10px 0;
+  }
 }
 
 /* For screens larger than 768px */
 @media screen and (min-width: 769px) {
+  header h1 {
+    font-size: 4rem;
+  }
   .button-list {
     flex-direction: row; /* Switch to row layout for larger screens */
     flex-wrap: nowrap;
@@ -217,5 +239,36 @@ h3 {
   }
   .btn, button, #homeButton {
     width: 200px; /* Ensure buttons take up equal space */
+  }
+  .player-img {
+    max-width: 65%;
+  }
+  #question-container button {
+    width: 200px; /* Ensure buttons take up equal space */
+    margin: 5px 10px;
+  }
+}
+
+/* For screens with a maximum width of 1024px */
+@media screen and (max-width: 1024px) {
+  header h1 {
+      font-size: 2.5rem;
+  }
+
+  .button-list li {
+      margin: 5px;
+  }
+
+  .btn, button {
+      width: 200px; /* Maintain button width */
+      margin: 10px; /* Adjust button margin */
+  }
+
+  .player-img {
+      max-width: 80%; /* Adjust player image size */
+  }
+
+  #question-container button {
+      margin: 10px 5px; /* Adjust button margin */
   }
 }
