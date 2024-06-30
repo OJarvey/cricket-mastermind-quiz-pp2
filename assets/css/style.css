@@ -207,7 +207,7 @@ header h1 {
 /* For screens with a maximum width of 768px (e.g., tablets) */
 @media screen and (max-width: 769px) {
   header h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
 .button-list li {
@@ -234,7 +234,7 @@ header h1 {
 /* For screens larger than 768px */
 @media screen and (min-width: 769px) {
   header h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
 .button-list {
