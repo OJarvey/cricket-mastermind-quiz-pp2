@@ -5,71 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Meta tags for search engines-->
     <meta name="description" content="Cricket, The gentle men game.">
-    <meta name="keywords" content="Cricket, sport, exercise cricket knowledge, know your cricket">
+    <meta name="keywords"
+      content="Cricket, sport, exercise cricket knowledge, know your cricket">
 
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-     
-    <title>Cricket Mastermind</title>
-    
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/icons8-cricket-180.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="32x32" href="assets/images/favicon/icons8-cricket-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/icons8-cricket-16.png">
 
-    <!-- Style -->
-    <style>
-      body {
-        background-image: url('assets/images/background-img.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-      }
-    </style>
+    <title>Cricket Mastermind</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180"
+      href="assets/images/favicon/icons8-cricket-180.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="32x32"
+      href="assets/images/favicon/icons8-cricket-32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+      href="assets/images/favicon/icons8-cricket-16.png">
   </head>
 
   <!-- Body -->
   <body>
     <div class="container">
       <div id="wrapper">
-        
+
         <!-- Header -->
         <header>
           <h1 class="heading">
             <a href="index.html">
-              <img class="logo" src="assets/images/icons8-cricket.png" alt="logo">
+              <img class="logo" src="assets/images/icons8-cricket.png"
+                alt="Cricket Mastermind Logo">
             </a>
             Cricket Mastermind
           </h1>
         </header>
 
-        <h3>FACTS</h3>
+        <main>
+          <h2>FACTS</h2>
 
-        <!-- Question and Answer Buttons -->
-        <div id="question-container">
-          <div id="question"></div>
-          <button id="answer1"></button>
-          <button id="answer2"></button>
-          <button id="answer3"></button>
-          <button id="answer4"></button>
-        </div>
+          <!-- Question and Answer Buttons -->
+          <section id="question-container">
+            <h3>Question</h3>
+            <div id="question"></div>
+            <button id="answer1"></button>
+            <button id="answer2"></button>
+            <button id="answer3"></button>
+            <button id="answer4"></button>
+          </section>
 
-        <hr>
+          <hr>
 
-        <!-- Timer and Score Display -->
-        <div id="timer">Time left: <span id="time">15</span> seconds</div>
-        <div>Score: <span id="score">0</span></div>
+          <!-- Timer and Score Display -->
+          <section>
+            <h4>Timer and Score</h4>
+            <div id="timer">Time left: <span id="time">15</span> seconds</div>
+            <div>Score: <span id="score">0</span></div>
+          </section>
 
-        <!-- Play Again Options -->
-        <div id="playAgain">
-          <p>Well Done! Would you like another go?</p>
-          <button onclick="endgameOption(0)">Yes</button>
-          <button id="homeButton" onclick="goHome()">Take Me Home</button>
-          <button onclick="endgameOption(1)">No, End Quiz</button>
-        </div>        
+          <!-- Play Again Options -->
+          <section id="playAgain">
+            <h4>Play Again</h4>
+            <p>Well Done! Would you like another go?</p>
+            <button onclick="endgameOption(0)">Yes</button>
+            <button id="homeButton" onclick="goHome()">Take Me Home</button>
+            <button onclick="endgameOption(1)">No, End Quiz</button>
+          </section>
+        </main>
       </div>
     </div>
 
