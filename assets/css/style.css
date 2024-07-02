@@ -23,6 +23,7 @@ button,
   width: 200px; /* Fixed width for all buttons */
   box-sizing: border-box; /* Ensure padding and border are included in the width */
   margin: 10px auto; /* Add margin to separate buttons */
+  touch-action: manipulation;
 }
 
 button:hover,
