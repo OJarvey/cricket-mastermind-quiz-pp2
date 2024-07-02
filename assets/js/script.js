@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     {
-      question: "Who is the only batsman in international cricket to score 400 runs in a single innings of a test match??",
+      question: "Who is the only batsman in international cricket to score 400 runs in a single innings of a test match?",
       answers: ["Sir Vivian Richards", "Steve Smith", " Sachin Tendulkar", "Brian Lara"],
       correct: 3
     },
@@ -245,7 +245,6 @@ document.addEventListener("DOMContentLoaded", () => {
         button.blur(); // Remove focus after click
       });
     });
-
    /**
     
    * Expose functions to the global scope for HTML event handlers
