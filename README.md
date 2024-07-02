@@ -9,6 +9,47 @@ Welcome to **Cricket Mastermind**, the ultimate quiz platform to test and expand
 
 ## Table of contents
 
+1. [First Time Visitor Goals](#first-time-visitor-goals)
+2. [Features](#features)
+   - [Home Page](#home-page)
+   - [Random Facts Quiz](#random-facts-quiz)
+   - [Guess The Player Quiz](#guess-the-player-quiz)
+   - [Rules Page](#rules-page)
+   - [404 Not Found Page](#404-not-found-page)
+3. [Responsive Design](#responsive-design)
+   - [Mobile View (Galaxy Z Fold)](#mobile-view-galaxy-z-fold)
+4. [Interactivity](#interactivity)
+5. [Timer and Score Tracking](#timer-and-score-tracking)
+6. [Design and Validation Tools](#design-and-validation-tools)
+   - [Color Palette](#color-palette)
+   - [HTML and CSS Validation](#html-and-css-validation)
+   - [JavaScript Validation](#javascript-validation)
+   - [Performance Checks](#performance-checks)
+7. [Wireframes](#wireframes)
+   - [Index Page](#index-page)
+   - [Facts Quiz](#facts-quiz)
+   - [Guess The Player Page](#guess-the-player-page)
+   - [Rules](#rules)
+   - [404 Page](#404-page)
+8. [Technologies Used](#technologies-used)
+9. [Deployment](#deployment)
+10. [Major Bugs and Fixes](#major-bugs-and-fixes)
+11. [GitHub Deployment](#github-deployment)
+12. [Fork Repository](#fork-repository)
+13. [Clone Repository](#clone-repository)
+14. [Meta Information](#meta-information)
+15. [Future Enhancements](#future-enhancements)
+16. [Credits](#credits)
+
+- [Icons](#icons)
+- [Font Style](#font-style)
+- [Players Images and Articles](#players-images-and-articles)
+- [CSS Styling](#css-styling)
+- [Background Image](#background-image)
+- [404 Image](#404-image)
+
+17.[Special Thanks](#special-thanks)
+
 ### First Time Visitor Goals
 
 - To test general quiz knowledge
@@ -193,14 +234,14 @@ Lighthouse and other performance check tools were used to ensure the site perfor
   - Click "Save", then wait for the page to be deployed
   - The URL is displayed above "Source"
 
-### Fork Repositary
+### Fork Repository
 
 - To fork the reositary
   - Login or Sign Up to GitHub
   - Navigate to the repository for this project [https://github.com/OJarvey/cricket-mastermind-quiz-pp2.git]
   - Click the "Fork" button on the top right of the page
 
-### Clone Repositary
+### Clone Repository
 
 - To clone the repository
   - Login or Sign Up to GitHub
