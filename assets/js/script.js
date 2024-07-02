@@ -158,6 +158,8 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       endgame();
     }
+    // Remove focus from all buttons
+    elements.answerButtons.forEach(button => button.blur());
   }
 
    /**
@@ -237,11 +239,12 @@ document.addEventListener("DOMContentLoaded", () => {
    * Add event listeners for answer buttons
 
    */
-  elements.answerButtons.forEach((button, index) => {
-    button.addEventListener('click', () => checkAnswer(index));
-    button.classList.add('clicked'); // Add clicked class to change style
-    setTimeout(() => button.blur(), 200); // Remove focus after 200ms
-  });
+    elements.answerButtons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        checkAnswer(index);
+        button.blur(); // Remove focus after click
+      });
+    });
 
    /**
     
