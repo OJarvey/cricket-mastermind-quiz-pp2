@@ -135,8 +135,6 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       endgame();
     }
-    // Remove focus from all buttons
-    elements.answerButtons.forEach(button => button.blur());
   }
 
    /**

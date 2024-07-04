@@ -147,8 +147,6 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       endgame();
     }
-    // Remove focus from all buttons
-    elements.answerButtons.forEach(button => button.blur());
   }
 
    /**
@@ -218,6 +216,7 @@ function disableAnswerButtons() {
       window.location.reload();
     } else {
       elements.wrapper.innerHTML = "<h1>Thanks for playing...</h1>";
+      disableAnswerButtons();
     }
   }
 
