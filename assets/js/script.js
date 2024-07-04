@@ -128,6 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
     elements.question.innerText = questionData.question;
     elements.answerButtons.forEach((button, index) => {
       button.innerText = questionData.answers[index];
+      button.disabled = false;
     });
     startTimer();
   }
@@ -154,12 +155,10 @@ document.addEventListener("DOMContentLoaded", () => {
    * Error page redirection
    */
    window.addEventListener('error', function(event) {
-    console.error("Error occurred: ", event.message);
     window.location.href = '404.html';
   });
 
   window.addEventListener('unhandledrejection', function(event) {
-    console.error("Unhandled promise rejection: ", event.reason);
     window.location.href = '404.html';
   });
 
@@ -192,7 +191,17 @@ document.addEventListener("DOMContentLoaded", () => {
     elements.playAgain.style.visibility = "visible";
     clearInterval(timer);
     document.getElementById('homeButton').style.display = 'inline-block';
+    disableAnswerButtons();
   }
+
+  /**
+ * Disable all answer buttons
+ */
+function disableAnswerButtons() {
+  elements.answerButtons.forEach(button => {
+    button.disabled = true;
+  });
+}
 
     /**
    * Redirect to the home page
