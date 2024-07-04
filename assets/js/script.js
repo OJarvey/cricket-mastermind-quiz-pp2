@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   /**
-
   * Get references to HTML elements
-
   */
   const elements = {
     question: document.getElementById('question'),
@@ -19,9 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   /**
-
  * Check if all elements are found
-
  */
 
   if (!elements.question || !elements.score || !elements.playAgain || !elements.wrapper || !elements.timeDisplay) {
@@ -37,9 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
     /**
-
    * Quiz state variables
-
    */
   let questionNumber = 0;
   let scoreAmount = 0;
@@ -47,9 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let timeLeft;
 
   /**
-
    * Questions array
-
    */
   const questions = [
 
@@ -129,9 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const quizLength = questions.length;
 
    /**
-
    * Load a question
-
    */
   function loadQuestion() {
     const questionData = questions[questionNumber];
@@ -143,9 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /**
-
    * Check the answer
-
    */
   function checkAnswer(answerNumber) {
     if (answerNumber === questions[questionNumber].correct) {
@@ -163,9 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
    /**
-
    * Error page redirection
-
    */
    window.addEventListener('error', function(event) {
     console.error("Error occurred: ", event.message);
@@ -178,9 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
     /**
-
    * Start the timer
-
    */
   function startTimer() {
     clearInterval(timer);
@@ -202,9 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /**
-
    * End the game
-
    */
   function endgame() {
     elements.playAgain.style.visibility = "visible";
@@ -213,18 +195,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
     /**
-
    * Redirect to the home page
-
    */
   function goHome() {
     window.location.href = 'index.html';
   }
 
     /**
-
    * Handle play again or end game options
-
    */
   function endgameOption(chosen) {
     if (chosen === 0) {
@@ -235,9 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
     /**
-
    * Add event listeners for answer buttons
-
    */
     elements.answerButtons.forEach((button, index) => {
       button.addEventListener('click', () => {
@@ -245,18 +221,15 @@ document.addEventListener("DOMContentLoaded", () => {
         button.blur(); // Remove focus after click
       });
     });
-   /**
-    
-   * Expose functions to the global scope for HTML event handlers
-   
+
+   /**   
+   * Expose functions to the global scope for HTML event handlers  
    */
   window.goHome = goHome;
   window.endgameOption = endgameOption;
 
     /**
-
    * Start the quiz
-
    */
   function startQuiz() {
     elements.playAgain.style.visibility = "hidden";
