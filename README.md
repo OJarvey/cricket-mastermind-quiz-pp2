@@ -161,7 +161,7 @@ JavaScript code was checked for errors and best practices using JSHint.
 Lighthouse and other performance check tools were used to ensure the site performs well on both desktop and mobile.
 
 ![Lighthouse Desktop Check](assets/images/docimages/16.lighthousecheck.png)
-![Lighthouse Mobile Check](assets\images\docimages\17.mobilelighthousecheck.png)
+![Lighthouse Mobile Check](assets/images/docimages/17.mobilelighthousecheck.png)
 
 ## Wireframes
 
