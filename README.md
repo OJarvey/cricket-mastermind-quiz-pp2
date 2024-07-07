@@ -1,6 +1,6 @@
 # Cricket Mastermind Quiz
 
-Welcome to **Cricket Mastermind**, the ultimate quiz platform to test and expand your cricket knowledge! Whether you're a casual fan or a cricket aficionado, this site offers a variety of quizzes and information to challenge your understanding of the gentleman's game.
+Welcome to **Cricket Mastermind**, the ultimate quiz platform to test your cricket knowledge! Whether you're a casual fan or a cricket lover, this site offers a variety of quizzes and information to challenge your understanding of the gentleman's game.
 
 ![Am I responsive](assets/images/docimages/1.amiresponsive-pages.png)
 
@@ -52,7 +52,6 @@ Welcome to **Cricket Mastermind**, the ultimate quiz platform to test and expand
 
 ### First Time Visitor Goals
 
-- To test general quiz knowledge
 - To test quiz knowledge in a selected subject
 - Discover interesting trivia
 - Enjoy a fun learning experience
@@ -115,7 +114,7 @@ The site is designed to be fully responsive, adapting to various screen sizes an
 
 ### Mobile View (Galaxy Z Fold)
 
-The site adapts seamlessly to different screen sizes, including foldable devices like the Galaxy Z Fold.
+The site adapts to different screen sizes, including foldable devices like the Galaxy Z Fold.
 
 ![Guess Player Mobile View](assets/images/docimages/7.guessplayer.html-galaxy-z-fold-mobile.png)
 ![Home Mobile View](assets/images/docimages/8.index.html-galaxy-z-fold-mobile.png)
@@ -158,7 +157,7 @@ JavaScript code was checked for errors and best practices using JSHint.
 
 ### Performance Checks
 
-Lighthouse and other performance check tools were used to ensure the site performs well on both desktop and mobile.
+Lighthouse performance check tool was used to ensure the site performs well on both desktop and mobile.
 
 ![Lighthouse Desktop Check](assets/images/docimages/16.lighthousecheck.png)
 ![Lighthouse Mobile Check](assets/images/docimages/17.mobilelighthousecheck.png)
@@ -204,7 +203,7 @@ Lighthouse and other performance check tools were used to ensure the site perfor
 
 1. **Buttons Staying Blue After Click**
    - **Issue**: On smaller devices, the buttons stayed blue after being clicked.
-   - **Solution**: Added CSS rules to prevent this behavior by setting the focus state of the buttons.
+   - **Solution**: Added CSS rules to prevent this behaviour by setting the focus state of the buttons.
 
 2. **Redirecting to 404 Page on Button Click**
    - **Issue**: The page kept redirecting to the 404 page whenever a button was clicked, even when the correct answer was selected.
@@ -224,15 +223,15 @@ Lighthouse and other performance check tools were used to ensure the site perfor
 
 ### GitHub Deployment
 
-- To deploy using GitHub pages
-  - Login or Sign Up to GitHub
-  - Open the project repository
-  - Navigate to "Settings" on the navigation bar under the repository title
-  - Click on "Pages" in the left hand navigation panel
-  - Under "Source", choose which branch to deploy (Main or Master)
-  - Choose which folder to deploy from, usually "/root"
-  - Click "Save", then wait for the page to be deployed
-  - The URL is displayed above "Source"
+- To deploy using GitHub pages.
+  - Login or Sign Up to GitHub.
+  - Open the project repository.
+  - Navigate to "Settings" on the navigation bar under the repository title.
+  - Click on "Pages" in the left-hand navigation panel.
+  - Under "Source", choose which branch to deploy (Main or Master).
+  - Choose which folder to deploy from, usually "/root".
+  - Click "Save", then wait for the page to be deployed.
+  - The URL is displayed above "Source".
 
 ### Fork Repository
 
